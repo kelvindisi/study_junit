@@ -13,7 +13,17 @@ class MathUtilsTest {
 		MathUtils mathUtils = new MathUtils();
 		var actual = mathUtils.add(3, 3);
 		
-		assertEquals(expected, actual);
+		assertEquals(expected, actual, "Should add two numbers");
 	}
-
+	
+	@Test
+	void testAreaCircle() {
+		double expected = 2463.01;
+		
+		MathUtils mathUtil = new MathUtils();
+		double actual = mathUtil.computeCircleArea(28);
+		
+		assertEquals(expected, actual, "Compute area of circle");
+	}
+	
 }
